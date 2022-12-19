@@ -1,0 +1,531 @@
+a {
+  display: block;
+  padding: 8px;
+  background-color: rgba(3, 3, 3, 0);
+}
+.Header {
+  text-align: center;
+  font-size: 60px;
+  color: white;
+  background-size: cover;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgba(3, 3, 3, 0);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  position: -webkit-sticky; /* Van internet */
+  position: sticky; /* Van internet */
+  top: 0;
+}
+li {
+  display: inline;
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #111;
+}
+.active {
+  background-color: rgba(3, 3, 3, 0.5);
+}
+.Henk {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 2pc;
+  padding: 30px;
+  margin: 100px;
+}
+.Fre {
+  Background: url("Downloads/majestic-lukas-tAUpEIpBUOw-unsplash.jpg");
+  Background-size: cover;
+  background-position: ;
+}
+.Free {
+  Background: url("Downloads/jusdevoyage-ZAFpiVgZNng-unsplash.jpg");
+  Background-size: cover;
+  background-position: ;
+}
+.Fr {
+  Background: url("Downloads/max-itin-7GeprSfVqLQ-unsplash.jpg");
+  Background-size: cover;
+  background-position:50% 35% ;
+}
+.A {
+  text-align: center;
+}
+.B {
+  background-color: rgba(60, 160, 200, 0.3);
+  border-radius: 1pc;
+  padding: 5px;
+}
+/* Bovenkant/Blog Title */
+.Bovenkant {
+  padding: 30px;
+  text-align: center;
+  background: url("Downloads/Banner.jpeg");
+  background-position: 50% 12%;
+  background-size: 110%;
+  color: white;
+}
+.Bovenkantposts {
+  padding: 30px;
+  text-align: center;
+  background: url("Downloads/duncan-adler-Got-SV5YRPg-unsplash.jpg");
+  background-position: 70% 61%;
+  background-size: 110%;
+  color: white;
+}
+.BovenkantGear {
+  padding: 30px;
+  text-align: center;
+  background: url("Downloads/shajan-jacob-ndBDatncNbA-unsplash.jpg");
+  background-position: 70% 62%;
+  background-size: 110%;
+  height: 160px;
+  color: white;
+}
+
+.Bovenkant h1 {
+  font-size: 50px;
+}
+
+.Bovenkant1 {
+  padding: 30px;
+  text-align: center;
+  background-position: 53% 40%;
+  background-size: 67%;
+  color: #333;
+}
+
+.Bovenkant1 h1 {
+  font-size: 50px;
+  color: white;
+}
+/* Opmaak van de navigatie bar */
+.NavigatieBovenkant {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Opmaak van de navigatie bar links */
+.NavigatieBovenkant a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Verandert kleur als je eroverheen hovert */
+.NavigatieBovenkant a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Zorgt voor twee gelijke kolommen die naast elkaar zweven */
+/* LinkerKolom */
+.LinkerKolom {
+  width: 80%;
+}
+
+/* Informatie */
+.Informatie {
+  text-align: center;
+  float:right;
+  background-color: White;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 80%;
+}
+
+/* Zorgt ervoor dat de Onderkant niet bij de Bovenkant begint */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* De onderkant van de site */
+.onderkant {
+  padding: 30px;
+  text-align: center;
+  background: url("Downloads/Banner.jpeg");
+  background-position: 50% 62%;
+  background-size: 110%;
+  color: white;
+}
+.onderkantposts {
+  padding: 30px;
+  text-align: center;
+  background: url("Downloads/duncan-adler-Got-SV5YRPg-unsplash.jpg");
+  background-position: 50% 82%;
+  background-size: 110%;
+  color: white;
+}
+.onderkantgear {
+  padding: 30px;
+  text-align: center;
+  background: url("Downloads/shajan-jacob-ndBDatncNbA-unsplash.jpg");
+  background-position: 50% 89%;
+  background-size: 110%;
+  color: white;
+}
+
+/* - wanneer het scherm minder dan 800px breed is, de twee kolommen op elkaar laten stapelen in plaats van naast elkaar. */
+@media screen and (max-width: 800px) {/* Van internet */
+  .LinkerKolom, .RechterKolom {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* - wanneer het scherm minder dan 400px breed is, de navigatie links op elkaar stapelen in plaats van naast elkaar. */
+@media screen and (max-width: 400px) {/* Van internet */
+  .NavigatieBovenkant a {
+    float: none;
+    width: 100%;
+  }
+}
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.LinkerKolom1 {
+  float: left;
+  width: 33%;
+  padding-left: 20px;
+}
+
+.MiddenKolom1 {
+  float: left;
+  width: 33%;
+  padding-left: 20px;
+}
+
+/* Right column */
+.RechterKolom1 {
+  float: left;
+  width: 33%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+.ImgFullface {
+  text-align: center;
+  Background: url("Downloads/FullFace.jpg");
+  Background-position: center;
+  Background-size: 100%;
+  width: 80%;
+  padding: 20px;
+  height:150px;
+  background-repeat: no-repeat;
+}
+.ImgOffRoad {
+    text-align: center;
+    Background: url("Downloads/OffRoad.jpg");
+    Background-position: center;
+    Background-size: 100%;
+    width: 80%;
+    padding: 20px;
+    height:150px;
+    background-repeat: no-repeat;
+}
+.ImgModular {
+  position: center;
+  Background: url("Downloads/Modular.jpg");
+  Background-position: center;
+  Background-size: 100%;
+  width: 80%;
+  padding: 20px;
+  height:150px;
+  background-repeat: no-repeat;
+}
+.ImgHalf {
+  text-align: center;
+  Background: url("Downloads/waldemar-brandt-hqAt9Fmp2cs-unsplash.jpg");
+  Background-position: center;
+  Background-size: 150%;
+  width: 80%;
+  padding: 20px;
+  height:150px;
+  background-repeat: no-repeat;
+}
+.ImgOpenface {
+  text-align: center;
+  background: url("Downloads/waldemar-brandt-pXsnmJ_wOHM-unsplash.jpg");
+  Background-position: center;
+  Background-size: 120%;
+  width: 80%;
+  padding: 20px;
+  height:150px;
+  background-repeat: no-repeat;
+}
+.ImgDualsport {
+  text-align: center;
+  Background: url("Downloads/Dual-sport-helmet.jpg");
+  Background-position: center;
+  Background-size: 100%;
+  width: 80%;
+  padding: 20px;
+  height:150px;
+  background-repeat: no-repeat;
+}
+.ImgGloves {
+  text-align: center;
+  Background: url("Downloads/atom-riders-g7YVEeK9LlI-unsplash.jpg");
+  Background-position: center;
+  Background-size: 100%;
+  width: 90%;
+  margin-left: 10px;
+  height:470px;
+  background-repeat: no-repeat;
+}
+.ImgGear {
+  text-align: center;
+  Background: url("Downloads/vander-films-AJAXdyJ4ue0-unsplash.jpg");
+  Background-position: center;
+  Background-size: 100%;
+  width: 80%;
+  height:150px;
+  background-repeat: no-repeat;
+}
+.ImgSportBikes {
+  text-align: center;
+  Background: url("Downloads/SportBike.jpg");
+  Background-position: center;
+  Background-size: 200%;
+  width: 80%;
+  height:150px;
+  background-repeat: no-repeat;
+}
+.ImgSupermotos {
+  text-align: center;
+  Background: url("Downloads/Supermoto.jpg");
+  Background-position: center;
+  Background-size: 100%;
+  width: 80%;
+  height:150px;
+  background-repeat: no-repeat;
+}
+.ImgTouring {
+  text-align: center;
+  Background: url("Downloads/adam-rhodes-f1mueYKxdg8-unsplash.jpg");
+  Background-position: center;
+  Background-size: 100%;
+  width: 80%;
+  height:150px;
+  background-repeat: no-repeat;
+}
+.ImgStandard {
+    text-align: center;
+    Background: url("Downloads/fabio-spinelli-cPpmFa1OiGU-unsplash.jpg");
+    Background-position: center;
+    Background-size: 100%;
+    width: 80%;
+    height:150px;
+    background-repeat: no-repeat;
+}
+.ImgDirtbikesS {
+  text-align: center;
+  Background: url("Downloads/darren-nunis-hxDRqp_kyvM-unsplash.jpg");
+  Background-position: center;
+  Background-size: 100%;
+  width: 80%;
+  height:150px;
+  background-repeat: no-repeat;
+}
+.ImgDual-purpose {
+  text-align: center;
+  Background: url("Downloads/stephen-andrews-NZjbTSllsNA-unsplash.jpg");
+  Background-position: center;
+  Background-size: 100%;
+  width: 80%;
+  height:150px;
+  background-repeat: no-repeat;
+}
+.ImgCruiser {
+  text-align: center;
+  Background: url("Downloads/harley-davidson-6_OBa-II5Go-unsplash.jpg");
+  Background-position: center;
+  Background-size: 100%;
+  width: 80%;
+  height:150px;
+  background-repeat: no-repeat;
+}
+.ImgPost1 {
+  float: left;
+  background: url("Downloads/sebastian-huisman-RRC2-YUAZyc-unsplash.jpg");
+  background-position:center;
+  background-size:90%;
+  height:470px;
+  width: 600px;
+  background-repeat: no-repeat;
+
+}
+.ImgPost2 {
+  float: left;
+  background: url("Downloads/sebastian-huisman-3tdy5yHbNEs-unsplash.jpg");
+  background-position:center;
+  background-size:90%;
+  height:420px;
+  width: 600px;
+  background-repeat: no-repeat;
+}
+.ImgPost3 {
+  float: left;
+  background: url("Downloads/bastian-scham-HqytM87dECo-unsplash.jpg");
+  background-position:center;
+  background-size:90%;
+  height:370px;
+  width: 600px;
+  background-repeat: no-repeat;
+}
+
+/* Informatie */
+.Informatie1 {
+  background-color: White;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* De onderkant van de site */
+.onderkant1 {
+  padding: 30px;
+  text-align: center;
+  background: url("Downloads/Banner.jpeg");
+  background-position: 50% 62%;
+  background-size: 110%;
+  color: white;
+}
+.onderkant2 {
+  padding: 30px;
+  text-align: center;
+  background-position: 50% 62%;
+  background-size: 110%;
+  color: white;
+}
+
+.ABCA {
+  width: 200px;
+  height: 200px;
+}
+.ABCB {
+  width: 150px;
+  height: 150px;
+}
+.LinkerKolom2 {
+  float: left;
+  width: 50%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.LinkerKolom3 {
+  width:100%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.ABCD {
+  width: 320px;
+  height: 250px;
+}
+.LinkerKolom5 {
+  float: left;
+  width: 100%;
+}
+.ABCC {
+  width: 100%;
+  height: 100%;
+}
+.InfoGloves {
+  background-color: White;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.InfoGloves2 {
+  margin-right: 100px;
+  color: #333;
+}
+.InfoGear {
+  background-color: White;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.FullFaceText {
+  margin-right: 20%;
+}
+.Gear {
+  float: right;
+  padding-left: 30px;
+  padding-right: 40px;
+  width: 600px;
+  padding-bottom: 5%;
+}
+.gloves {
+  padding-right: 40px;
+  float: left;
+  padding-left: 30px;
+  padding-bottom: 0%;
+  width: auto;
+  height: 350px;
+}
+.B {
+  background:url("Downloads/shajan-jacob-ndBDatncNbA-unsplash.jpg");
+  background-size: 100%;
+}
+body {
+  font-family: Zen Dots;
+}
+table {
+  border-collapse: collapse;
+  margin-right: auto;
+  margin-left: auto;
+  width: 60%;
+  color: white;
+}
+
+td, th {
+  border: 1px solid rgba(44, 44, 44, 0.5);
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(111, 111, 111, 0.5);
+}
+tr:nth-child(odd) {
+  background-color: rgba(44, 44, 44, 0.5);
+}
+
+/* - wanneer het scherm minder dan 800px breed is, de twee kolommen op elkaar laten stapelen in plaats van naast elkaar. */
+@media screen and (max-width: 1400px) {/* Van internet */
+  .LinkerKolom1, .RechterKolom1, .MiddenKolom1 {
+    width: 50% 50%;
+    padding: 1%;
+  }
+}
+
+/* - wanneer het scherm minder dan 400px breed is, de navigatie links op elkaar stapelen in plaats van naast elkaar. */
+@media screen and (max-width: 400px) {/* Van internet */
+  .NavigatieBovenkant a {
+    float: none;
+    width: 100%;
+  }
+}
